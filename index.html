@@ -1,0 +1,230 @@
+<!-- Best View in 1920px x 1080px -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #shape {
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            position: relative;
+            transform: scale(0.8);
+        }
+
+        #solChallenge {
+            font-size: 5.9rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: grey;
+        }
+
+        #logo {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100px;
+            position: relative;
+            transform: scale(0.3);
+        }
+
+        .bar {
+            width: 100px;
+            height: 30px;
+            border-radius: 15px;
+            position: absolute;
+        }
+
+        #red {
+            transform: rotate(-30deg);
+            transform-origin: 0%;
+        }
+
+        #green {
+            transform: rotate(30deg);
+            transform-origin: 100%;
+        }
+
+        #blue {
+            transform: rotate(30deg);
+            transform-origin: 0%;
+        }
+
+        #yellow {
+            transform: rotate(-30deg);
+            transform-origin: 100%;
+        }
+
+        #lefthalf{
+            transform: translateX(-45px);
+        }
+        #righthalf{
+            transform: translateX(45px);
+        }
+
+        #GDSC{
+            font-size: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: grey;
+        }
+
+        #frame{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid; */
+        }
+
+        #blueRecRight{
+            background: blue;
+            width:350px;
+            height: 150px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        #blueRecLeft{
+            background: blue;
+            width:200px;
+            height: 370px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        #parentFrame{
+            position: absolute;
+            left: 25%;
+            transform: scale(0.7);
+        }
+
+        #circleGreen{
+            width: 140px;
+            height: 140px;
+            background: rgb(20, 198, 20);
+            position: absolute;
+            top: 0;
+            right: 350px;
+            border-radius: 50%;
+        }
+
+        #thinRec{
+            width: 700px;
+            height: 150px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        #thinYellow{
+            height: 200px;
+            width: 500px;
+            background: #fbbc00;
+            border-radius: 100px;
+            transform: translateY(-25px);
+            position: relative;
+        }
+
+        #greenBorder{
+            width: 70px;
+            height: 70px;
+            border: 5px solid rgb(20, 198, 20);
+            position: absolute;
+            top: 60px;left: 70%;
+        }
+
+        img{
+            position: absolute;
+            left: 20px;
+            width: 180px;
+            top: 310px;
+        }
+
+        #thinred{
+            position: absolute;
+            width: 70px;
+            transform: rotate(-40deg);
+            height: 100px;
+            border: 4px solid red;
+            bottom: 10%;
+            left: 45%;
+            border-radius: 20px;
+        }
+
+        #line{
+            width: 100px;
+            height: 3px;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: -20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="shape">
+            <div id="parentFrame">
+                <span id="solChallenge">Solution<br>Challenge</span>
+                <br>
+                <div id="frame" style="position: relative;">
+                    <div id="logo">
+                        <div id="lefthalf" class="half">
+                            <div class="bar" id="red" style="background: red;"></div>
+                            <div class="bar" id="blue" style="background: blue;"></div>
+                        </div>
+                        <div id="righthalf" class="half">
+                            <div class="bar" id="green" style="background: green;"></div>
+                            <div class="bar" id="yellow" style="background: yellow;"></div>
+                        </div>
+                    </div>
+                    <span id="GDSC">Google Developer Student Clubs</span>
+                </div>
+            </div>
+        <div id="blueRecRight"></div>
+        <div id="blueRecLeft"></div>
+        <div id="circleGreen">
+            <div id="line"></div>
+        </div>
+        <div id="thinRec">
+            <div id="thinYellow">
+                <div id="greenBorder"></div>
+            </div>
+        </div>
+        <img src="./PRIZE.png" alt="">
+        <div id="thinred"></div>
+        </div>
+    </div>
+</body>
+
+</html>
