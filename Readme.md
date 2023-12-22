@@ -9,5 +9,3 @@
 ![Image SS 2](<./task2/Screenshot (214).png>)
 ![Image SS 3](<./task2/Screenshot (215).png>)
 ***
-***
-# * HELLO
