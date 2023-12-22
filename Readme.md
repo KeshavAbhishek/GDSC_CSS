@@ -1,5 +1,5 @@
 
-# [TASK 1](https://keshavabhishek.github.io/GDSC_CSS/)
+# [TASK 1](https://keshavabhishek.github.io/GDSC_CSS/task1/index.html)
 ![Alt text](<./task1/Screenshot (211).png>)
 ***
 ![Alt text](<./task1/Screenshot (212).png>)
