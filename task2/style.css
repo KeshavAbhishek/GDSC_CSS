@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#contain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#navbar {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #2b7cff;
+    color: white;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 6rem;
+    transform: scale(0);
+}
+
+#whatISGS {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    text-align: center;
+    padding: 1vh 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(93, 93, 93);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.div {
+    width: 100%;
+    margin-top: 5vh;
+}
+
+p {
+    font-size: 3.5rem;
+    text-align: justify;
+    /* padding: 0 30px; */
+    /* margin: 0 30px; */
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(93, 93, 93, 1);
+    animation: changeColor 4s ease-in-out alternate infinite;
+    width: 90%;
+}
+
+@keyframes changeColor {
+    0% {
+        color: #ea4235;
+    }
+
+    25% {
+        color: #ffb908;
+    }
+
+    50% {
+        color: #34a853;
+    }
+
+    75% {
+        color: #4286f5;
+    }
+
+    100% {
+        color: #ea4235;
+    }
+}
+
+.span1 {
+    font-size: 7rem;
+    color: red;
+    text-shadow: 5px 5px 0px green;
+}
+
+#overlap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+    animation: removeBG 1s ease-in forwards 1;
+    animation-delay: 4s;
+}
+
+#overlap img {
+    height: 0vh;
+    animation: logoAnimate 4s ease-in-out forwards 1;
+
+}
+
+@keyframes logoAnimate {
+    0% {
+        height: 0vh;
+        opacity: 1;
+    }
+
+    100% {
+        height: 80vh;
+        opacity: 0.1;
+    }
+}
+
+@keyframes removeBG {
+    0% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0vh;
+    }
+}
+
+h1 {
+    animation: animateH1 1s ease-in-out forwards 1;
+    animation-delay: 5s;
+}
+
+@keyframes animateH1 {
+    0% {
+        transform: scale(0);
+    }
+
+    75% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.h2 {
+    margin-top: 4vh;
+}
+
+.mid {
+    animation: changeColor 4s ease-in-out alternate infinite;
+    animation-delay: 2s;
+}
+
+/* ul{
+    padding: 20px;
+}
+ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgba(93, 93, 93, 1);
+    font-size: 3rem;
+    cursor: pointer;
+} */
+
+table {
+    width: 90%;
+    /* border: 1px solid; */
+    border-collapse: collapse;
+    margin-top: 2vh;
+}
+
+#fb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+tr {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+    padding: 1vh 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(93, 93, 93);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+td {
+    padding: 20px 0;
+}
+
+.text:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#container{
+    animation: overflowControl 1s ease forwards 1;
+    animation-delay: 5s;
+}
+
+@keyframes overflowControl {
+    0%{
+        overflow-y: hidden;
+    }
+    100%{
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 5rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .span1{
+        font-size: 2.5rem;
+    }
+    .text{
+        font-size: 1.4rem;
+    }
+
+    table tr td img{
+        width: 150px;
+    }
+
+    /* #overlap img{
+        width: ;
+    } */
+
+    @keyframes logoAnimate {
+        0% {
+            height: 0vh;
+            opacity: 1;
+        }
+    
+        100% {
+            height: 45vh;
+            opacity: 0.1;
+        }
+    }
+}
